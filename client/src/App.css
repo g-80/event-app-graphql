@@ -1,0 +1,35 @@
+:root {
+  --orange: hsl(35, 100%, 50%);
+  --light-grey: hsl(0, 0%, 90%);
+  --grey: hsl(0, 0%, 83%);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.main-content {
+  margin-top: 64px;
+  padding-top: 80px;
+}
+
+.btn-primary {
+  background-color: var(--orange);
+}
+
+.btn-primary:hover {
+  background-color: hsl(35, 100%, 60%);
+}
+
+.btn-secondary {
+  background-color: var(--light-grey);
+}
+
+.btn-secondary:hover {
+  background-color: hsl(0, 0%, 85%);
+}

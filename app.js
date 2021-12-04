@@ -2,6 +2,7 @@ const express = require("express");
 const { graphqlHTTP } = require("express-graphql");
 const mongoose = require("mongoose");
 require("dotenv/config");
+const path = require("path");
 
 const graphqlSchema = require("./graphql/schema/index");
 const graphqlResolvers = require("./graphql/resolvers/index");
@@ -29,6 +30,8 @@ app.use(
     graphiql: process.env.NODE_ENV !== "production",
   })
 );
+
+app.use("/", express.static(path.join(__dirname, "client/build")));
 
 mongoose
   .connect(

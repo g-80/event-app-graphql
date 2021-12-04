@@ -1,0 +1,39 @@
+.auth-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-form {
+  margin-top: 30px;
+  width: 25%;
+}
+
+.auth-control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.auth-control label {
+  margin-bottom: 8px;
+}
+
+.auth-input {
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  padding-inline: 10px;
+}
+
+.form-btns-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-btn-submit,
+.form-btn-switch {
+  height: 40px;
+  margin-bottom: 20px;
+}
